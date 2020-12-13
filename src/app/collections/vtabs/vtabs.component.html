@@ -1,0 +1,14 @@
+<div class="ui grid">
+    <div class="four wide column">
+      <div class="ui vertical fluid tabular menu">
+        <a class="item" *ngFor="let tab of tabs; let i = index" [ngClass]="i === activeTab? 'active' : ''" (click)="activate(i)">
+          {{tab}}
+        </a>
+      </div>
+    </div>
+    <div class="twelve wide stretched column">
+      <div class="ui segment">
+        {{tabsAttached[activeTab]}}
+      </div>
+    </div>
+</div>

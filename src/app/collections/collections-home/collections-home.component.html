@@ -1,0 +1,48 @@
+<app-message>
+    <header>Collection Components</header>
+    Semantic UI Collection components consists of [Breadcrumb, Form, Grid, Menu, Message, Table]
+</app-message>
+<app-divider>
+    Table
+</app-divider>
+
+<app-table 
+    [data]="data" 
+    [headers]="headers" 
+    class="celled striped"
+>
+</app-table>
+
+<app-divider>
+    vTab Menu with sub links
+</app-divider>
+
+<app-tabs>
+    <a 
+    routerLink="./" 
+    class="item" 
+    routerLinkActive="active" 
+    [routerLinkActiveOptions]="{exact:true}">
+        Biography
+    </a>
+    <a 
+        routerLink="./companies" 
+        class="item" 
+        routerLinkActive="active">
+        Companies
+    </a>
+    <a 
+        routerLink="./partners" 
+        class="item" 
+        routerLinkActive="active">
+        Partners
+    </a>
+</app-tabs>
+
+<app-divider>
+    vTab Menu with static contents
+</app-divider>
+
+<app-vtabs [tabs]="tabs" [tabsAttached]="tabsAttaches">
+
+</app-vtabs>

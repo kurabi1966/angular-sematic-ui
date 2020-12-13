@@ -1,0 +1,10 @@
+<div class="ui statistics">
+    <div class="statistic" *ngFor="let element of data">
+      <div class="value">
+        {{element.value | number}}
+      </div>
+      <div class="label">
+        {{element.label}}
+      </div>
+    </div>
+  </div>
