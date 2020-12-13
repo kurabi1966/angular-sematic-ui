@@ -1,0 +1,18 @@
+.actions:empty{
+    display: none;
+}
+
+.actions-default{
+    display: none;
+}
+
+.actions:empty + .actions-default{
+    display: block
+}
+
+.content:empty{
+    display: none;
+}
+.header:empty{
+    display: none;
+}

@@ -2,3 +2,29 @@
     <header>Modules Components</header>
     Semantic UI Modules components consists of [Accordion, Checkbox, Dimmer, Dropdown, Embed, Modal, Popup, Progress, Rating, Search, Shape, Sidebar, Sticky, Tab, Transition]
 </app-message>
+
+<app-divider>
+    Modal Component
+</app-divider>
+
+<button class="button btn-primary" (click)="onShow()">Show Modal</button>
+<app-modal *ngIf="modalOpen" (close)="onClose()" showCancel="true">
+    <ng-container modalHeader>
+        More information Lina
+    </ng-container>
+    <ng-container modalContent>
+        <p>
+            Muhanned It is a long <b>established</b> fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). 
+        </p>
+    </ng-container>
+    <ng-container modalFooter>
+        <button class="ui primary button" (click)="onSubmit()">Submit</button>
+        <button class="ui negative button" (click)="onClose()">Cancel</button>
+    </ng-container>
+</app-modal>
+
+<app-divider>
+    Accodion Component
+</app-divider>
+
+<app-accordion [data]="accordionData"></app-accordion>
